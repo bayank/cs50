@@ -7,9 +7,14 @@ This repo contains my submissions for Harvard's CS50 edX course.
 - cs50 Manual: https://manual.cs50.io/
 
 ## Usage
-In order to compile you need to use the cs50 IDE. For example, to compile hello.c :
+1. In order to compile you need to use the cs50 IDE. For example, to compile hello.c :
 ```bash
 make hello
 ``` 
 
 To compile locally, you need to install the cs50 libraries as described in https://cs50.readthedocs.io/libraries/cs50/c/
+
+2. To run, simply enter:
+```bash
+./hello
+```
