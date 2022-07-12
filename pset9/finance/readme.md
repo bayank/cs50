@@ -2,7 +2,7 @@
 This is a stock tracker app build using Flask, sqlite3, python, and jinja2
 
 ## How to use:
-1) First you need to generate an API key from https://iexcloud.io/
+1) First you need to generate an API key from https://iexcloud.io/cloud-login#/register
 2) Run the following commands to run the flask server locally after cloning this repo:
 
 ```bash
