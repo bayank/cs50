@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Stock tracker
+{% endblock %}
+
+{% block main %}
+    This is the home page for {{session["username"]}}.
+    <div class="section">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Name</th>
+                    <th>Shares</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- TODO: Loop through the database entries to display them in this table -->
+                {% for row in rows %}
+                    <tr>
+                        <td>{{row.symbol }}</td>
+                        <td>{{row.name }}</td>
+                        <td>{{row.shares }}</td>
+                        <td>{{ row.price | usd }}</td>
+                        <td>{{(row.price * row.shares) | usd }}</td>
+                    </tr>
+                {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
