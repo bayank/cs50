@@ -1,4 +1,4 @@
 # Congress stock tracker
-#### Video Demo:  <URL HERE>
+#### Video Demo:  https://youtu.be/s83eNAVwTvM
 #### Description:
 This project makes use of publicly available data about disclosed stock trading transactions by members of congress. In this first iteration we'll process this data and sort the list of members by the number of transactions completed for the time interval of the full dataset. This will show us the most active members, which I think is an interesting data point. The primary source of this data comes from https://senatestockwatcher.com/api which is continuously updated from the original source available here: https://efdsearch.senate.gov/search/home/ . This project will injest the json encoded payload in order to derived meaningful conclusions about the companies and industries our elected officials are investing into or out of.
